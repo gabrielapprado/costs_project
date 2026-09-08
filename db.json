@@ -10,17 +10,6 @@
       "cost": 0,
       "services": [],
       "id": "E4f4KV2HbOM"
-    },
-    {
-      "name": "teste",
-      "budget": "5000",
-      "category": {
-        "id": "1",
-        "name": "Infra"
-      },
-      "cost": 0,
-      "services": [],
-      "id": "oarhumxYiSg"
     }
   ],
   "categories": [
