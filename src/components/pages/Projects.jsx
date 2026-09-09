@@ -11,6 +11,8 @@ function Projects(){
     const [removeLoading,setRemoveLoading] = useState(false)
 
     const [projects,setProjects]=useState([])
+
+    const [projectMessage, setProjectMessage]= useState('')
     
     const location = useLocation()
 
@@ -43,8 +45,9 @@ function Projects(){
             headers:{
                 'Content-Type':'application/json'
             }
-        }).then(res => res.json()).then(data =>{
+        }).then(res => res.json()).then(() =>{
             setProjects(projects.filter((project) => project.id !== id))
+            setProjectMessage('Projeto removido com sucesso!')
         })
         .catch(err=> console.log(err))
     }
@@ -56,6 +59,7 @@ function Projects(){
                 <LinkButton to="/newproject" text="Criar Projeto"/>
             </div>
             {message && <Message  type="sucess"  msg={message}/>}
+            {projectMessage && <Message  type="sucess"  msg={projectMessage}/>}
             <Container customClass="start">
                 {projects.length > 0 && 
                   projects.map((project) => (
