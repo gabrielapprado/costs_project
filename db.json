@@ -21,6 +21,17 @@
       "cost": 0,
       "services": [],
       "id": "hbyTvZA__18"
+    },
+    {
+      "name": "Projeto Infra",
+      "budget": "13000",
+      "category": {
+        "id": "1",
+        "name": "Infra"
+      },
+      "cost": 0,
+      "services": [],
+      "id": "8_sVU1-8QPo"
     }
   ],
   "categories": [
@@ -40,5 +51,6 @@
       "id": "4",
       "name": "Planejamento"
     }
-  ]
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
 }
