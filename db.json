@@ -7,8 +7,21 @@
         "id": "3",
         "name": "Design"
       },
-      "cost": 0,
-      "services": [],
+      "cost": 1200,
+      "services": [
+        {
+          "name": "Layout",
+          "cost": "200",
+          "description": "teste",
+          "id": "01410384-a886-427f-9a0d-ad9000a725f4"
+        },
+        {
+          "name": "Front End Básico",
+          "cost": "1000",
+          "description": "teste",
+          "id": "0a7c5ec3-e6bd-464c-b259-935aab1dd07d"
+        }
+      ],
       "id": "Lc5GXLi8skA"
     },
     {
@@ -51,6 +64,5 @@
       "id": "4",
       "name": "Planejamento"
     }
-  ],
-  "$schema": "./node_modules/json-server/schema.json"
+  ]
 }
